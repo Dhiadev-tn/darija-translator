@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Model checkpoints (upload to HuggingFace instead)
+*.pt
+checkpoints/
+
+# Logs (personal research journal)
+logs/
+
+# Sentencepiece model files
+*.model
+*.vocab
+
+# Environment
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Test scripts
+smoke_test.py
