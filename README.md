@@ -182,5 +182,10 @@ Built by **Dhia** ([@dhiadev-tn](https://github.com/dhiadev-tn)) — Tunisia
 *This project is a bridge. A link between Tunisia and the digital world. Proof that identity deserves representation ,and that the people who carry that identity are capable of building that representation themselves.*
 
 ---
+## Links
+- 📊 Dataset: https://huggingface.co/datasets/Dhiadev-tn/tunisian-darija-english
+- 🤗 Model: https://huggingface.co/Dhiadev-tn/darija-translator
+
+---
 
 > *"I didn't wait for the door to be built. I built it."*
