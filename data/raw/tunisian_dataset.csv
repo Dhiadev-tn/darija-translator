@@ -5,7 +5,7 @@ greetings,wnk ya 5ouya, how are you brother
 greetings,wnk lebes 3lik,hey how are you doing
 greetings,sbeh el nour, good morning
 greetings,salemou 3alaykom ,greetings to you
-greetings,ti wnk lhob mechiya el denya, how are you my friend how is life 
+greetings,ti wnk lhob mechiya el denya, how are you my friend how is life
 greetings,chenya a7welek, how are you
 greetings,3aslema, hey
 greetings,wnkom lebes,how are you doing is everything fine
@@ -17,11 +17,11 @@ farewells,fi amen el leh, goodbye
 farewells,nchallah nchoufouk 3ala 9rib,see you soon
 farewells,ma3rfa tayba,it was nice meeting you
 farewells,beslema,goodbye
-farewells,rod belek 3ala ro7ek, be safe 
+farewells,rod belek 3ala ro7ek, be safe
 farewells,chehiya tayba,bon apetit /goodbye
 family,omi tayeb fil ftour,my mom is cooking lunch
 family,3andi zouz khwet,i have two siblings
-family,5ouya akber meni b 5 snin,my brother is 5 years older than me 
+family,5ouya akber meni b 5 snin,my brother is 5 years older than me
 family,baba akber men omi,my father is older than my mother
 family,benti el s8ira 3morha 3amin,my youngest daughter is 3 years old
 family,ena ou weld 3ami nafs el 3mor,my cousin and i are the same age
@@ -47,13 +47,13 @@ shopping_money,ta3mali soum bech najem nechri,give me a discount so i can buy it
 shopping_money,el boutique fih 7weyej r5as,the shop has cheap things
 shopping_money,nechri el lebsa men el medina,i buy clothes from the medina
 shopping_money,ma3ndiech flous fi maktoubi,i don't have money in my pocket
-shopping_money,baba 3tani flous lel kre,dad gave me money for the rent 
+shopping_money,baba 3tani flous lel kre,dad gave me money for the rent
 shopping_money,el 7anut sakker bekri elyoum,the shop closed early today
 time_directions,emchi tout el 9odem mba3d dour 3al ymin,go straight then turn left
 time_directions,el rendez-vous fi sbe7 el youm,the appointment is this morning
 time_directions,win nal9a m7atet el kiran men houni,where is the bus station from here
 time_directions,je el wa9t bech nemchiw,it is time for us to go
-time_directions,dour 3al ymin ou awil dar to3rdhek ,turn right and the first house you encounter 
+time_directions,dour 3al ymin ou awil dar to3rdhek ,turn right and the first house you encounter
 time_directions,beb el mdina b3id mena,the medina gate is far from here
 time_directions,3andna rendez-vous ba3d noss sa3a,we have an appointment in half an hour
 time_directions,el youm el jom3a w 8odwa el sebt,today is friday and tomorrow is saturday
@@ -133,9 +133,19 @@ seasons,el sif je ou bich nemchou n3oumou fil b7ar ,summer came and we will go s
 seasons,el chte bared barcha fi tounes,winter is very cold in Tunisia
 seasons,fi rbi3 el ta9s safi w el ward yetfata7,the weather is clear and flowers bloom
 seasons,el 5rif fi tounes ta9sou ta7foun,autumn in tunisia has a nice weather
-seasons,fil sif kol youm ne,chou lil b7ar,in the summer we go everyday to the sea 
+seasons,fil sif kol youm ne,chou lil b7ar,in the summer we go everyday to the sea
 seasons,el chthe a7sen wa9t bech tochrob fih 7lib s5oun ,winter is the best time to drink hot milk
 seasons,ba3d el denya tedhlem fisa3,after autumn it gets dark early
 seasons,fi rbi3 no5orjou nala3bou el bara ,in spring we go play outside
 seasons,el sif yet3ada fisa3 w el lil 9air,summer passes fast and the nights are short
 seasons,fi el chte el lil yetwel ou el nhar ye9sar,in winter the night gets longer and the day shorter
+islamic_expressions,inchallah narja3ou nchofou ba3dhna,i hope we see each other again
+islamic_expressions,hamdullah 3la kol 7al,we are greatful no matter the results 
+islamic_expressions, haya neklou bismiallah el ra7men el ra7im , lets start eating
+islamic_expressions,tbarkallah 3lik weldek mzyen barcha,your son is very handsome
+islamic_expressions,maktoub ,it was fated to happen 
+islamic_expressions,rabbi ysahalek fil devoirat,i hope you do well on the exams 
+islamic_expressions,rabi yostorna nchlh,i hope we are protected 
+islamic_expressions,rabi yar7amha kenet mra tayba,she was a kind woman
+islamic_expressions,mashallah 3la benti kebret,my daughter has grown up well
+islamic_expressions,fi aman allah nchoufek 8odwa ,i will see you tomorrow
