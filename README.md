@@ -12,7 +12,7 @@ I searched. I found nothing , only uncleaned Moroccan datasets that didn't speak
 This project is not just a translation model. It is a statement. Tunisia is a true standing culture that deserves recognition — and it has minds capable of fighting each day despite limited resources and restricted horizons.
 
 Previous work explored Tunisian Darija translation using pre-trained models. 
-i am intending to build the first ever pipeline from scratch 
+I am intending to build the first ever pipeline from scratch 
 ---
 
 ## The Problem
