@@ -11,6 +11,8 @@ I searched. I found nothing , only uncleaned Moroccan datasets that didn't speak
 
 This project is not just a translation model. It is a statement. Tunisia is a true standing culture that deserves recognition — and it has minds capable of fighting each day despite limited resources and restricted horizons.
 
+Previous work explored Tunisian Darija translation using pre-trained models. 
+i am intending to build the first ever pipeline from scratch 
 ---
 
 ## The Problem
@@ -66,7 +68,7 @@ inference.py      → Translation interface
 - **After cleaning**: 35,977 pairs
 - **Removed**: 8,736 pairs , duplicates, short pairs, untranslated sentences, Moroccan-specific vocabulary
 
-### Tunisian Layer — Hand-Crafted by a Native Speaker
+### Tunisian Layer — Hand-Crafted by a native tunisian speaker 
 - **120 sentence pairs** built manually
 - Authentic Tunisian Darija across 12 categories: greetings, farewells, family, food & drinks, shopping & money, time & directions, emotions & feelings, compliments & insults, school & studying, health & illness, Tunisian slang, Tunisian proverbs
 - **Zero automated generation** , every pair written and validated by a native Tunisian speaker
@@ -107,7 +109,7 @@ The model demonstrates partial understanding of Darija structure. Simple greetin
 
 This is not a failure. This is the finding.
 
-The pipeline works. The architecture is proven. The data gap is documented firsthand. Phase 2 — field collection — is the answer.
+The pipeline works. The architecture is proven. The data gap is documented firsthand. Phase 2 , field collection , is the answer.
 
 ---
 
