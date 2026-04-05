@@ -63,17 +63,17 @@ inference.py      → Translation interface
 
 ## The Dataset
 
-### Foundation Layer — Cleaned Moroccan Darija
+### Foundation Layer : Cleaned Moroccan Darija
 - **Source**: atlasia/darija_english (HuggingFace)
 - **After cleaning**: 35,977 pairs
 - **Removed**: 8,736 pairs , duplicates, short pairs, untranslated sentences, Moroccan-specific vocabulary
 
-### Tunisian Layer — Hand-Crafted by a native tunisian speaker 
+### Tunisian Layer : Hand-Crafted by a native tunisian speaker 
 - **120 sentence pairs** built manually
 - Authentic Tunisian Darija across 12 categories: greetings, farewells, family, food & drinks, shopping & money, time & directions, emotions & feelings, compliments & insults, school & studying, health & illness, Tunisian slang, Tunisian proverbs
 - **Zero automated generation** , every pair written and validated by a native Tunisian speaker
 
-### Next Phase — Field Collection (Summer 2026)
+### Next Phase : Field Collection (Summer 2026)
 - Multi-region recordings across Tunisia (Tunis, Sfax, Sousse, Djerba, Kairouan)
 - Multiple age groups and regional dialects
 - Target: 3,000–5,000 validated pairs
@@ -179,7 +179,7 @@ You are free to use, share, and build on this work for non-commercial purposes ,
 
 ## About
 
-Built by **Dhia** ([@dhiadev-tn](https://github.com/dhiadev-tn)) — Tunisia
+Built by **Dhia** ([@dhiadev-tn](https://github.com/dhiadev-tn)) , Tunisia
 
 *This project is a bridge. A link between Tunisia and the digital world. Proof that identity deserves representation ,and that the people who carry that identity are capable of building that representation themselves.*
 
