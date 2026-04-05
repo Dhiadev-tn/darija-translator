@@ -9,7 +9,7 @@ I felt a pang in my chest the day I realized how underrepresented my Tunisian di
 
 I searched. I found nothing , only uncleaned Moroccan datasets that didn't speak my language, my culture, or my identity. And in that moment it became clear to me: the door to digital representation for Tunisian Darija hadn't been built yet. So I decided to build it myself.
 
-This project is not just a translation model. It is a statement. Tunisia is a true standing culture that deserves recognition — and it has minds capable of fighting each day despite limited resources and restricted horizons.
+This project is not just a translation model. It is a statement. Tunisia is a true standing culture that deserves recognition , and it has minds capable of fighting each day despite limited resources and restricted horizons.
 
 Previous work explored Tunisian Darija translation using pre-trained models. 
 I am intending to build the first ever pipeline from scratch 
@@ -87,13 +87,13 @@ inference.py      → Translation interface
 |-----------|--------|
 | Architecture | Encoder-Decoder Transformer |
 | Parameters | ~15.6M |
-| Tokenizer | SentencePiece BPE — 16,000 tokens, trained on combined Darija+English corpus, shared between source and target, Arabizi-aware |
+| Tokenizer | SentencePiece BPE :16,000 tokens, trained on combined Darija+English corpus, shared between source and target, Arabizi-aware |
 | Embedding dim | 256 (source + target, weight-tied output layer) |
 | Encoder / Decoder | 4 layers each |
 | Training data | ~35,000 cleaned Moroccan Darija pairs |
-| Pre-training | 15 epochs — final loss 2.8393 |
+| Pre-training | 15 epochs : final loss 2.8393 |
 | Fine-tuning data | 120 hand-crafted Tunisian pairs |
-| Fine-tuning | 20 epochs — final loss 2.6264 |
+| Fine-tuning | 20 epochs : final loss 2.6264 |
 | Model size | ~59.4 MB (float32) |
 | Peak VRAM | 628MB out of 3,500MB limit |
 | Hardware | NVIDIA RTX 3050 Laptop (4GB VRAM) |
@@ -150,18 +150,18 @@ python inference.py
 ## Roadmap
 
 ```
- Phase 1 — Foundation
+ Phase 1 : Foundation
    Arabizi tokenizer, data pipeline, Nano-Transformer
 
- Phase 2 — Training
+ Phase 2 : Training
    35,977 cleaned pairs, BPE tokenization, fine-tuning
 
-⏳ Phase 3 — Field Collection (Summer 2026)
+⏳ Phase 3 : Field Collection (Summer 2026)
    Multi-region Tunisian recordings
    Native speaker validation
    3,000–5,000 authentic pairs
 
-⏳ Phase 4 — Production Model
+⏳ Phase 4 : Production Model
    Retrain on clean Tunisian foundation
    HuggingFace public release
    Open for community contributions
@@ -173,7 +173,7 @@ python inference.py
 
 This project is licensed under **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**.
 
-You are free to use, share, and build on this work for non-commercial purposes — as long as you credit the author and share your improvements under the same license.
+You are free to use, share, and build on this work for non-commercial purposes , as long as you credit the author and share your improvements under the same license.
 
 ---
 
