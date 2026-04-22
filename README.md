@@ -69,8 +69,8 @@ inference.py      → Translation interface
 - **Removed**: 8,736 pairs , duplicates, short pairs, untranslated sentences, Moroccan-specific vocabulary
 
 ### Tunisian Layer : Hand-Crafted by a native tunisian speaker 
-- **120 sentence pairs** built manually
-- Authentic Tunisian Darija across 12 categories: greetings, farewells, family, food & drinks, shopping & money, time & directions, emotions & feelings, compliments & insults, school & studying, health & illness, Tunisian slang, Tunisian proverbs
+- **328 sentence pairs** built manually
+- Authentic Tunisian Darija across 33 categories: greetings, farewells, family, food & drinks, shopping & money, time & directions, emotions & feelings, compliments & insults, school & studying, health & illness, Tunisian slang, Tunisian proverbs,weather,seasons,islamic_expressions,transportation,french_loanwords_darija,cafe_culture,code_switching,wedding_celebrations,hammem_culture,7ouma_life,ramadan_culture,market_medina,barbershop_culture,bureaucracy_paperwork,football_culture,bac_exam_culture,work_jobseeking,coffee_shop_arguments,louage_culture,3aylet_gatherin,,3rouset_el_7ouma
 - **Zero automated generation** , every pair written and validated by a native Tunisian speaker
 
 ### Next Phase : Field Collection (Summer 2026)
@@ -92,7 +92,7 @@ inference.py      → Translation interface
 | Encoder / Decoder | 4 layers each |
 | Training data | ~35,000 cleaned Moroccan Darija pairs |
 | Pre-training | 15 epochs : final loss 2.8393 |
-| Fine-tuning data | 120 hand-crafted Tunisian pairs |
+| Fine-tuning data | 328 hand-crafted Tunisian pairs |
 | Fine-tuning | 20 epochs : final loss 2.6264 |
 | Model size | ~59.4 MB (float32) |
 | Peak VRAM | 628MB out of 3,500MB limit |
