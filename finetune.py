@@ -52,7 +52,8 @@ print()
 # ── Configuration ──────────────────────────────────────────────────────────────
 PROJECT_ROOT       = os.path.dirname(os.path.abspath(__file__))
 MOROCCAN_CSV       = os.path.join(PROJECT_ROOT, "data/clean/clean_darija_english.csv")
-TUNISIAN_CSV       = os.path.join(PROJECT_ROOT, "data/raw/tunisian_dataset.csv")
+TUNISIAN_CSV       = os.path.join(PROJECT_ROOT, "data/splits/train.csv")
+TUNISIAN_VAL_CSV   = os.path.join(PROJECT_ROOT, "data/splits/val.csv")
 TUNISIAN_REPEAT    = 20        # repeat 120 pairs × 20 = 2,400 Tunisian samples
 MOROCCAN_REPEAT    = 1         # keep Moroccan at 1x — prevents catastrophic forgetting
 PRETRAINED_CKPT    = os.path.join(PROJECT_ROOT, "models/checkpoints/best_model.pt")
@@ -90,14 +91,22 @@ with open(MOROCCAN_CSV, encoding="utf-8") as f:
             moroccan_pairs.append((d, e))
 print(f"  Moroccan pairs   : {len(moroccan_pairs):,}")
 
-# ── Step 2: Load hand-crafted Tunisian dataset ─────────────────────────────────
+# ── Step 2: Load hand-crafted Tunisian dataset (train split only) ──────────────
 tunisian_pairs: list[tuple[str, str]] = []
 with open(TUNISIAN_CSV, encoding="utf-8") as f:
     for row in csv.DictReader(f):
         d, e = row["darija"].strip(), row["english"].strip()
         if d and e:
             tunisian_pairs.append((d, e))
-print(f"  Tunisian pairs   : {len(tunisian_pairs):,}  (hand-crafted, native-corrected)")
+print(f"  Tunisian train   : {len(tunisian_pairs):,}  (hand-crafted, native-corrected)")
+
+tunisian_val_pairs: list[tuple[str, str]] = []
+with open(TUNISIAN_VAL_CSV, encoding="utf-8") as f:
+    for row in csv.DictReader(f):
+        d, e = row["darija"].strip(), row["english"].strip()
+        if d and e:
+            tunisian_val_pairs.append((d, e))
+print(f"  Tunisian val     : {len(tunisian_val_pairs):,}  (held-out, never trained on)")
 print(f"  Tunisian repeat  : ×{TUNISIAN_REPEAT}  → {len(tunisian_pairs) * TUNISIAN_REPEAT:,} effective samples")
 
 # ── Step 3: Build combined vocabulary ─────────────────────────────────────────
@@ -150,7 +159,12 @@ dataloader      = DataLoader(torch_dataset, batch_size=BATCH_SIZE, shuffle=True,
 steps_per_epoch = len(dataloader)
 total_steps     = EPOCHS * steps_per_epoch
 
+val_dataset     = DarijaDataset(tunisian_val_pairs, tokenizer)
+val_dataloader  = DataLoader(val_dataset, batch_size=BATCH_SIZE, shuffle=False,
+                             num_workers=0, pin_memory=True)
+
 print(f"\n  Training samples : {len(torch_dataset):,}")
+print(f"  Val samples      : {len(val_dataset):,}")
 print(f"  Steps/epoch      : {steps_per_epoch:,}")
 print(f"  Total steps      : {total_steps:,}")
 print(f"  Eff. batch size  : {BATCH_SIZE * GRAD_ACCUM_STEPS}")
@@ -323,13 +337,37 @@ for epoch in range(start_epoch + 1, EPOCHS + 1):
 
     avg_loss = epoch_loss / batches_seen
     vram_mb  = torch.cuda.memory_reserved(0) / (1024 ** 2)
+
+    # ── Validation loss ────────────────────────────────────────────────────────
+    model.eval()
+    val_loss   = 0.0
+    val_batches = 0
+    with torch.no_grad():
+        for src, tgt in val_dataloader:
+            src = src.to(DEVICE, non_blocking=True)
+            tgt = tgt.to(DEVICE, non_blocking=True)
+            tgt_input  = tgt[:, :-1]
+            tgt_output = tgt[:, 1:]
+            with autocast(enabled=USE_AMP):
+                logits = model(
+                    src, tgt_input,
+                    src_key_padding_mask=make_pad_mask(src),
+                    tgt_key_padding_mask=make_pad_mask(tgt_input),
+                )
+                loss = criterion(logits.reshape(-1, NEW_TGT_VOCAB), tgt_output.reshape(-1))
+            val_loss   += loss.item()
+            val_batches += 1
+    avg_val_loss = val_loss / val_batches
+    model.train()
+
     print()
     print(f"  ── Epoch {epoch:2d} complete ──")
-    print(f"     Avg loss  : {avg_loss:.4f}")
-    print(f"     VRAM      : {vram_mb:.1f} MB / {VRAM_LIMIT_MB} MB")
+    print(f"     Train loss : {avg_loss:.4f}")
+    print(f"     Val loss   : {avg_val_loss:.4f}")
+    print(f"     VRAM       : {vram_mb:.1f} MB / {VRAM_LIMIT_MB} MB")
 
-    if avg_loss < best_loss:
-        best_loss = avg_loss
+    if avg_val_loss < best_loss:
+        best_loss = avg_val_loss
 
     # Save epoch checkpoint — includes scheduler + scaler for clean resume.
     ckpt_path = os.path.join(FINETUNE_DIR, f"epoch_{epoch:02d}.pt")
@@ -341,25 +379,27 @@ for epoch in range(start_epoch + 1, EPOCHS + 1):
             "scheduler": scheduler.state_dict(),
             "scaler":    scaler.state_dict(),
             "avg_loss":  avg_loss,
+            "avg_val_loss": avg_val_loss,
             "best_loss": best_loss,
             "bpe_model": vocab.BPE_MODEL_FILE,
         },
         ckpt_path,
     )
-    print(f"     Checkpoint: {ckpt_path}")
+    print(f"     Checkpoint : {ckpt_path}")
 
-    if avg_loss <= best_loss:
+    if avg_val_loss <= best_loss:
         best_path = os.path.join(FINETUNE_DIR, "best_model.pt")
         torch.save(
             {
                 "epoch":     epoch,
                 "model":     model.state_dict(),
-                "avg_loss":  best_loss,
+                "avg_loss":  avg_loss,
+                "avg_val_loss": avg_val_loss,
                 "bpe_model": vocab.BPE_MODEL_FILE,
             },
             best_path,
         )
-        print(f"     Best model: {best_path}  (loss={best_loss:.4f})")
+        print(f"     Best model : {best_path}  (val_loss={best_loss:.4f})")
 
     if vram_mb > VRAM_LIMIT_MB:
         print(f"\n  WARNING: VRAM {vram_mb:.1f} MB exceeded {VRAM_LIMIT_MB} MB limit.")
