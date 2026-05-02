@@ -207,6 +207,8 @@ hammem_culture,el me skhoun barsha,the water is very hot
 hammem_culture,93adit fi hammem sa3a kamlha,I stayed in the hammem for a full hour
 hammem_culture,el s8ar mayemchouch lil 7amem wada7hom,children don't go to the hammem alone
 hammem_culture,7asit bel ra7a ba3d el hammem,I felt so refreshed after the hammem
+hammem_culture,bdit bel nsob fel me 9bal ma nod5ol l bit el s5oun,I started pouring water on myself before going into the hot room
+hammem_culture,el tayeba t7ok bel behi yalzmek tafra7 beha,the hammam lady scrubs really well you have to tip her
 7ouma_life,wled houma kolna 5wet,we neighbors are all brothers
 7ouma_life,to7t lel 7ouma nchouf chkoun mawjoud,I went down to the neighborhood to see who's around
 7ouma_life,el 3zouza mta3 el 7ouma ta3ref kol 7aja,the old lady from the neighborhood knows everything
@@ -276,7 +278,8 @@ bac_exam_culture,el devoir 8odwa ou manich m7adher,the exam is tomorrow and i di
 bac_exam_culture,tnajem tenja7 bel matieret el sehlin,you can pass with the easy subjects
 bac_exam_culture,el section informatique trod el bac s3ib,the informatique section makes the bac hard
 bac_exam_culture,el resultat habtet w 3ayelti far7et barcha,the results came out and my family was so happy
-bac_exam_culture,miselch el bac mouch e5er el denya tnajem t3awed el 3am el jey ,the bac is not the end of the world you can try again next yearwork_jobseeking,n7eb nlawwej 3la 5hedma beser3a,i want to find a job quickly
+bac_exam_culture,miselch el bac mouch e5er el denya tnajem t3awed el 3am el jey,the bac is not the end of the world you can try again next year
+work_jobseeking,n7eb nlawwej 3la 5hedma fisa3,i want to find a job quickly
 work_jobseeking,ma3andich aktef ou mana3ref 7ad,i don't have connections or know anyone
 work_jobseeking,ba3tht el CV mte3i fel blayes el kol oy majewebni 7ad,i sent my CV everywhere and they didn't reply
 work_jobseeking,el interview 8odwa w ena 5ayef barcha,the interview is tomorrow and i am very scared
@@ -375,4 +378,4 @@ summer_beach_culture,el la7dha li tousel feha lel b7ar ou tchem ri7et el me tans
 3id_el_kbir,3amalna 9leya w kebda mechwiya,We made 9leya and grilled liver
 3id_el_kbir,ras el 3alouch t9as men 8ir ma farka7 ,The sheep's head got cut without resistance
 3id_el_kbir,kol 3am wenti 7aya b5ir ya omi,Wishing you well every year Mom
-3id_el_3adina el 3id m3a el 3ila el kol fi dar jaddi,We spend Eid  with the whole family at grandpa's house
+3id_el_kbir,3adina el 3id m3a el 3ila el kol fi dar jaddi,We spend Eid  with the whole family at grandpa's house

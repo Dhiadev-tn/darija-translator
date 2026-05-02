@@ -1,0 +1,305 @@
+category,darija,english
+greetings,sbeh el 5ir,good morning
+greetings,ahla cha7welek,hey how are you
+greetings,wnk ya 5ouya,how are you brother
+greetings,wnk lebes 3lik,hey how are you doing
+greetings,sbeh el nour,good morning
+greetings,salemou 3alaykom,greetings to you
+greetings,ti wnk lhob mechiya el denya,how are you my friend how is life
+greetings,chenya a7welek,how are you
+farewells,salem,bye
+farewells,bye bye 5ouya,goodbye brother
+farewells,aya ciao,see you later
+farewells,nchallah ma3rfa tayba,it was good knowing you
+farewells,fi amen el leh,goodbye
+farewells,nchallah nchoufouk 3ala 9rib,see you soon
+farewells,ma3rfa tayba,it was nice meeting you
+farewells,beslema,goodbye
+family,omi tayeb fil ftour,my mom is cooking lunch
+family,3andi zouz khwet,i have two siblings
+family,5ouya akber meni b 5 snin,my brother is 5 years older than me
+family,baba akber men omi,my father is older than my mother
+family,benti el s8ira 3morha 3amin,my youngest daughter is 3 years old
+family,ena ou weld 3ami nafs el 3mor,my cousin and i are the same age
+family,jadti 3andha barcha 7kayet,my grandmother has a lot of stories
+family,3ami yoskon b3id 3lina,my uncle lives far from us
+food_drinks,ommi 3mlet coseksi el youm,my mom made couscous today
+food_drinks,nheb nakil kasekrout bel hrisa,i like to eat a sandwitch with hrissa
+food_drinks,n7eb nochrob 9ahwa,i want to drink coffee
+food_drinks,el merguez fi tounes aban 7aja,the merguez in tunisia is the best
+food_drinks,a3tini kes me bared,give me a glass of cold water
+food_drinks,el 5obz m3a zit ou za3tar bnin barcha,bread with olive oil and thyme is really tasty
+food_drinks,mchina klina makloub fel lil,we went to eat a sandwich at night
+food_drinks,famma 7alwa bnina 3and el 7amas,there is a delicious sweet in the shop
+shopping_money,9adeh soumha,how much does this cost
+shopping_money,ghalia barcha manajamch nechriha,it's too expensive i can't buy it
+shopping_money,3andi flous ama mayekfiwech,i have money but it's not enough
+shopping_money,mchit lel marchi bech nechri 5odhra,i went to the market to buy vegetables
+shopping_money,ta3mali soum bech najem nechri,give me a discount so i can buy it
+shopping_money,el boutique fih 7weyej r5as,the shop has cheap things
+shopping_money,nechri el lebsa men el medina,i buy clothes from the medina
+shopping_money,ma3ndiech flous fi maktoubi,i don't have money in my pocket
+time_directions,emchi tout el 9odem mba3d dour 3al ymin,go straight then turn left
+time_directions,el rendez-vous fi sbe7 el youm,the appointment is this morning
+time_directions,win nal9a m7atet el kiran men houni,where is the bus station from here
+time_directions,je el wa9t bech nemchiw,it is time for us to go
+time_directions,dour 3al ymin ou awil dar to3rdhek,turn right and the first house you encounter
+time_directions,beb el mdina b3id mena,the medina gate is far from here
+time_directions,3andna rendez-vous ba3d noss sa3a,we have an appointment in half an hour
+time_directions,el youm el jom3a w 8odwa el sebt,today is friday and tomorrow is saturday
+emotions_feelings,ena far7an barcha el youm,i am very happy today
+emotions_feelings,7asit enou ma3ndich 9ima,i felt like i have no value
+emotions_feelings,manajamtech nched dmou3i w bkit,i couldn't hold it and i cried
+emotions_feelings,galbi t7atem fi joretha,my heart is broken because of her
+emotions_feelings,7asit ro7i far7an ou merte7,i felt happy and relieved
+emotions_feelings,ena te3ib ou manich lebes,i am tired and not feeling well
+emotions_feelings,5ouya a7sen haja fi 7yeti,my brother is the best thing in my life
+emotions_feelings,7asit ro7i b3id 3al 3bed,i felt distant from people
+compliments_insults,inti bnina barcha w dhkeya,you are very sweet and smart
+compliments_insults,hedha we7id mnyk ma ya3rfech yekhdem,this guy is useless and doesn't know how to work
+compliments_insults,3andek 9aleb kbir,you have a big and kind heart
+compliments_insults,rak bhim ma tefhem 7ata chay,you are an idiot you don't understand anything
+compliments_insults,sahebti 3a9la w metrobya w 9albha safi,my friend is smart kind and has a pure heart
+compliments_insults,chkoun hedha el 9a7ba eli 3amla haka,who is this bitch who did this
+compliments_insults,rak behi fi kolchay,you are very good at everything
+compliments_insults,rajel hedha mouch metrobi,this guy has no manners
+school_studying,3andi devoir 8odwa ou ma9rit chay,i have a test tomorrow and i haven't studied anything
+school_studying,el prof fasser el dar bel behi,the teacher explained the lesson well
+school_studying,saba7t nraja3 bech nenja7,i stayed up at night revising to pass
+school_studying,el bac 9rib w ena 5ayef barcha,the bac is near and i am very scared
+school_studying,sahbi yji ya9ra m3aya,my friend comes to study with me
+school_studying,el mou3adel mte3i el sne behi,my grade this year is good
+school_studying,el classe fih barcha bheyem w mahouch ndhif,the classroom has a lot of donkeys and is not clean
+school_studying,7abit nkammel 9rayti fil fac fi america,i want to finishmy studies at university in america
+health_illness,rasi youja3 barcha,my head hurts a lot
+health_illness,3andi ka77a men mbera7,i have a cough since yesterday
+health_illness,7sit badni bered ou s5oun,i feel hot and cold in my body
+health_illness,mchit lel tebib el youm,i went to the doctor today
+health_illness,3andi ouji3a fi kerchi mel sbe7,i have a stomachache since morning
+health_illness,el dwe mte3i ykhalini nor9od,my medicine makes me sleepy
+health_illness,3mridh manajamtech n9oum mel farch,i'm sick and couldn't get up from bed
+health_illness,llezem terte7 w tochreb barcha me,you need to rest and drink a lot of water
+tunisian_slang,yezzi rak tdhaya3li fi wa9ti,that's enough you're wasting my time
+tunisian_slang,jaw yal hob el youm kol chay mche mrgl,awesome today everything went well
+tunisian_slang,7otha fi belek hedhi e5er mara ou ma3adech bich tsir,never mind it's just once and it won't happen again
+tunisian_slang,hedha mouch mrigel ykhaf men kolchay,this guy is not tough he's scared of everything
+tunisian_slang,haw jeyeb feha yefehmelha,supposedly he's the one who knows everything
+tunisian_slang,yedi lyoum jawi behi 3al le5er,i'm in top shape today i'm not tired at all
+tunisian_slang,zeyda menek sa7bi faza 5ayba,shame on you for doing that
+tunisian_slang,winou 5ouya 93adet nlawej 3lih mal9itouch,where is my brother i went to look for him and i didnt find him
+tunisian_proverbs,eli fat met w eli jey a7sen,there are better days to come and we should forget the past
+tunisian_proverbs,el 9erd fi 3in omou 8zal,a mother will always see her children as beautiful
+tunisian_proverbs,dar jark 9bal darek,you must protect your neighbor before yourself
+tunisian_proverbs,el yed eli ma ta9darch 3aleha bousha,if you cant beat them submit to them
+tunisian_proverbs,3ich w tchof,live long enough to see truly the world
+tunisian_proverbs,el beb eli yji mennou ri7 seddou w erte7,the path that provides nothing to you should be changed
+tunisian_proverbs,kol m3awej bich ywali 7tab,every crooked person is as good as firewood
+tunisian_proverbs,eli ma 3andouch kbir yechri kbir,buy your way through life and situations
+weather,el jaw bered barcha elyoum,it's very cold today
+weather,el jaw s5on w chams 9wiya,it's hot and the sun is scorching
+weather,el chte sabet barcha el lila,it rained a lot last night
+weather,kifeh el ta9s lyoum,what's the weather like today
+weather,famma ri7 9awya w bared,there's a cold strong wind
+weather,el ta9s m8ayem ou matnajamch tchouf el chams,it's so cloudy you can't see the sun
+weather,bech tsob el chte 8odwa el sbe7,it's going to rain tomorrow morning
+weather,ch chams tal3et ba3d el chte,the sun came out after the rain
+seasons,el sif je ou bich nemchou n3oumou fil b7ar,summer came and we will go swim in the ocean
+seasons,el chte bared barcha fi tounes,winter is very cold in Tunisia
+seasons,fi rbi3 el ta9s safi w el ward yetfata7,the weather is clear and flowers bloom
+seasons,el 5rif fi tounes ta9sou ta7foun,autumn in tunisia has a nice weather
+seasons,fil sif kol youm nemchou lil b7ar,in the summer we go everyday to the sea
+seasons,el chthe a7sen wa9t bech tochrob fih 7lib s5oun,winter is the best time to drink hot milk
+seasons,ba3d el denya tedhlem fisa3,after autumn it gets dark early
+seasons,fi rbi3 no5orjou nala3bou el bara,in spring we go play outside
+islamic_expressions,inchallah narja3ou nchofou ba3dhna,i hope we see each other again
+islamic_expressions,hamdullah 3la kol 7al,we are greatful no matter the results
+islamic_expressions,haya neklou bismiallah el ra7men el ra7im,lets start eating
+islamic_expressions,tbarkallah 3lik weldek mzyen barcha,your son is very handsome
+islamic_expressions,maktoub,it was fated to happen
+islamic_expressions,rabbi ysahalek fil devoirat,i hope you do well on the exams
+islamic_expressions,rabi yostorna nchlh,i hope we are protected
+islamic_expressions,rabi yar7amha kenet mra tayba,she was a kind woman
+transportation,win el mahatta?,where is the bus station?
+transportation,a3tini ticket lel marsa 3aychek,give me a ticket to la marsa please
+transportation,fama na9l lel 3asma ?,is there a louage to the capital?
+transportation,za3ma najem nousel bel metro?,can i get there by metro?
+transportation,el coursa mta3 el taxi 8aliya chwaya,the taxi fare is a bit expensive
+transportation,wini m7atet el kiran,where is the bus stop?
+transportation,aandi wa9t bech nousel?,do i have enough time to arrive?
+transportation,el train mta3 tounes wa9tech yemchi?,when does the tunis train leave?
+french_loanwords_darija,charji el portable mte3ek,charge your phone
+french_loanwords_darija,7ot el 7weyej fel 5zena,put the clothes in the closets
+french_loanwords_darija,taw na5ou taxi bech nousel fil wa9t,i'll take a taxi to arrive on time
+french_loanwords_darija,el frigidaire fera8 mafih 7ata chay,the fridge is empty there's nothing in it
+french_loanwords_darija,3andek stylo bech nekteb bih ?,do you have a pen to write with?
+french_loanwords_darija,talifouni ta7 charge,my phone battery is dead
+french_loanwords_darija,bara lel pharmacie jib dwe el ras,go to the pharmacy get medicine for the headache
+french_loanwords_darija,el ascenseur ma yekhedimch el youm,the elevator isn't working today
+cafe_culture,a3tini 9ahwa 7lib s8ira,give me a small coffee with milk
+cafe_culture,a3mali shicha toffa7 w 7ot fa7m behi,male me an apple shisha and put good coal
+cafe_culture,nemchiw nel3bou karta fel 9ahwa,let's go play cards at the cafe
+cafe_culture,ya garson a3tina zouz kisen me  bardin,waiter give us two glasses of cold water
+cafe_culture,nemchiew nchoufou el match fel 9ahwa el lila,let's go watch the match at the cafe tonight
+cafe_culture,baba yerkech fil 9ahwa kol sbe7 m3a s7abou,my dad sits at the cafe every morning with his friends
+cafe_culture,el shisha mte3i tfet 3awed cha3elha,my shisha went out relight it
+cafe_culture,express 9wiya min 8ir soker,a strong expresso without sugar
+code_switching,je suis fatigué bezzef,I'm extremely tired
+code_switching,c'est normal haka,is this normal !
+code_switching,franchement mouch normal hedha,honestly this is not normal !
+code_switching,laisse tomber ma3adech nheb naaref,forget it I don't want to know anymore
+code_switching,il est sympa barsha sa7bek,your friend is very funny
+code_switching,j'arrive taw taw istaneni,I'm coming right now just wait for me
+code_switching,c'est bon yezzi,that's enough stop it
+code_switching,par contre m3andich flous,on the other hand I have no money
+wedding_celebrations,mabroukkel far7a,congratulations on the wedding
+wedding_celebrations,lilet el 7enna kenet 7lowa barcha,the henna night was very beautiful
+wedding_celebrations,el 3aroussa labsa roubet el 3ers,the bride is wearing the wedding dress
+wedding_celebrations,el tzaghrit yetsma3 men b3id,you can hear the zaghruta from far away
+wedding_celebrations,el 3ar bich yo93od sab3a ayem,the wedding celebration lasts seven days
+wedding_celebrations,el 3rousa lebsa jebba,the groom is wearing a jebba
+wedding_celebrations,iji nestad3ouk lel 3ers mte3na,come we invite you to our wedding
+wedding_celebrations,5amsa ou 5mis 3la el 3roussa,blessings and tenderness upon the bride
+hammem_culture,nemchi lel hammem kol nhar jem3a,I go to the hammem each Friday
+hammem_culture,jibi ma3ak el kessa wel shampoin,bring the kessa scrub shampoo
+hammem_culture,el hammem m3abi el youm,the hammem is packed today
+hammem_culture,7okli dhahri bel behi,scrub my back nicely
+hammem_culture,el me skhoun barsha,the water is very hot
+hammem_culture,93adit fi hammem sa3a kamlha,I stayed in the hammem for a full hour
+hammem_culture,el s8ar mayemchouch lil 7amem wada7hom,children don't go to the hammem alone
+hammem_culture,7asit bel ra7a ba3d el hammem,I felt so refreshed after the hammem
+7ouma_life,wled houma kolna 5wet,we neighbors are all brothers
+7ouma_life,to7t lel 7ouma nchouf chkoun mawjoud,I went down to the neighborhood to see who's around
+7ouma_life,el 3zouza mta3 el 7ouma ta3ref kol 7aja,the old lady from the neighborhood knows everything
+7ouma_life,salemt 3la el 7ouma el kol w ana machi,I greeted the whole neighborhood as I walked
+7ouma_life,jaw yis2lou 3lina ki mrodhna,they came to check on us when we were sick
+7ouma_life,el zan9a mte3na feha barcha nes,our alley has a lot of people in it
+7ouma_life,kol sbe7 nechrou el 5obz mel koucha mta3 el houma,we always buy bread from the neighborhood's bakery every morning
+7ouma_life,ouled el 7ouma yala3bou fel zan9a,the neighborhood kids play in the alley
+ramadan_culture,el madfa3 dhrab w je wa9t cha9an el fatr,the cannon fired and it's time to break the fast
+ramadan_culture,cha9ina ftarna 3la brik ou chorba,we had iftar with brik and soup
+ramadan_culture,el adhan fetna lyoum,we missed the prayer call today
+ramadan_culture,sharna lel s7our m3a el 3ayla,we stayed up late for s7our with the family
+ramadan_culture,mabrouk 3lina el chhar el fadhil,congratulations on the blessed month
+ramadan_culture,el jame3 ken m3abi mbera7 fel trawi7,the mosque was packed last night for tarawih prayers
+ramadan_culture,7adher el tawla 9bal el adhan,prepare the table before the prayer call
+ramadan_culture,el makroudh w el ba9lewa mahomch bech yo9o3dou lel 3id,the makroudh and ba9lewa won't last until eid
+market_medina,el medina yeser m3abiya lyoum matnajamch temchi,the medina is so crowded today you can't even walk
+market_medina,a3tini kilo tmatem ou rtal felfel a7mer,give me a kilo of tomatoes and half a kilo of red peppers
+market_medina,a3tina soumek w taw netfehmou,give us your price and we will negociate
+market_medina,ija chouf 3andi sel3a freshka,come look i have very fresh goods
+market_medina,el fripe fih barcha hajet b soum r5is,the fripe has a lot of items at very cheap prices
+market_medina,el 3attar 3andou kol 7aja 7low wala mela7,the spice seller has everything from sweet tp salty
+market_medina,zid tay7elna fel soum,lower the price more
+market_medina,echri men 3and el haj brahim dima ar5es men 8irou,buy from haj brahim it's always cheaper than the others
+barbershop_culture,fama blasa wala nistana,do you have a spot open or do I need to wait
+barbershop_culture,5ali el chib ou na9es mel fou9 chwaya,leave the grey hair and just trim the top a little
+barbershop_culture,el 7ajjem ya3ref kolchay ysir fel 7ouma,the barber knows everything going on in the neighborhood
+barbershop_culture,nadhafli el ajneb bel deux,give me a number two with the clippers and clean up the edges
+barbershop_culture,el 7ajjem ken m3abi nhar el jem3a nes el kol lena,the barbershop was packed on friday all the guys were there
+barbershop_culture,7otli chwaya colonia ki tkamel,put some cologne on me when you're done
+barbershop_culture,el 7ajjem yefhem fel siyesa wel koura,the barber has opinions on both football and politics
+barbershop_culture,a7ser el la7ya ou 5alili el chle8em,line the beard up straight and leave the mustache
+bureaucracy_paperwork,arja3 8odwa fama chay lyoum,come back tomorrow there's nothing happening today
+bureaucracy_paperwork,lazem tjib el cache mel bureau el kbir,you have to get the stamp from the main office
+bureaucracy_paperwork,el nes we9fa 3andha se3a ou houma ma3amlou chay,people waited for hours and they didn't do anything for us
+bureaucracy_paperwork,awra9ek ne9sin,your papers are missing one document
+bureaucracy_paperwork,bara jib chhedet wileda mel baladeya 9bal,go get a birth certificate from the municipality first
+bureaucracy_paperwork,el idara msakra lyoum arja3 8odwa,the office is closed today come back tomorrow
+bureaucracy_paperwork,doussik kemel wala ne9es war9a,do you have a complete file or is something missing
+bureaucracy_paperwork,3adit nhar kemil men beb l beb,I spent the whole day going door to door
+football_culture,espérance heya el denya mafama chy e5er,espérance is everything there's nothing else
+football_culture,match el lila yalzmou yeterba7,tonight's match is a must-win for us
+football_culture,chkoun ched arbitre el lila,who's refereeing tonight
+football_culture,el var fased el tor7,VAR ruined the match
+football_culture,goal s7i7 wala le,it was a clear goal or wasn't it
+football_culture,el coach s3ib maya3rech ya3mel changement,the coach is weak he doesn't know how to sub
+football_culture,club ywaja3li rasi,club africain gives me a headache
+football_culture,taw netfarjou fi a7sen el la9tat ba3d el 3che,we'll watch the highlights after dinner
+bac_exam_culture,njeh el bac howa aham haja,passing the bac is everything nothing else matters
+bac_exam_culture,9adeh jebt fel bac 3amnewil,what was your score in the bac last year
+bac_exam_culture,wa9teli tji resultat el bac el denya tit9leb,when bac results come out the whole world flips
+bac_exam_culture,el matiere hedhi s3iba bara zid a9ra,the subject is hard to pass go study more
+bac_exam_culture,3andek bac wala mazelt,do you have your bac or not yet
+bac_exam_culture,el devoir 8odwa ou manich m7adher,the exam is tomorrow and i didn't prepare for it
+bac_exam_culture,tnajem tenja7 bel matieret el sehlin,you can pass with the easy subjects
+bac_exam_culture,el section informatique trod el bac s3ib,the informatique section makes the bac hard
+work_jobseeking,n7eb nlawwej 3la 5hedma fisa3,i want to find a job quickly
+work_jobseeking,ma3andich aktef ou mana3ref 7ad,i don't have connections or know anyone
+work_jobseeking,ba3tht el CV mte3i fel blayes el kol oy majewebni 7ad,i sent my CV everywhere and they didn't reply
+work_jobseeking,el interview 8odwa w ena 5ayef barcha,the interview is tomorrow and i am very scared
+work_jobseeking,9alouli el 5edma yalzamha experience wena ma3andi hata experience,they told me the job requires experience and i have zero experience
+work_jobseeking,sahbi ista3mel 3ala9atou ou da5louh mel beb el kbir,my friend used his connections and they got him in through the big door
+work_jobseeking,el 5edma el 7oukoumeya stable ama ma3andich chkoun yda5alni fel domaine,the government job has security but i have no one to get it for me
+work_jobseeking,nemchi lel ANETI kol jem3a w mafama chay,i go to ANETI every week and there is nothing
+coffee_shop_arguments,el entreneur mta3 el taraji 5edemtou behiya ama el selection mte3ou 5ayba,the esperance trainer works very well but his selection is bad
+coffee_shop_arguments,y9oulouli el ahly ahsen club fel afrique ama bensba leya el taraji fou9 el kol,they tell me al ahly is the best club in africa but i say esperance is above everyone
+coffee_shop_arguments,el siyessa fi tounes kol wa7ed ya3ref yahki w 7ata 7ad maya3ref ye5dem,politics in tunisia everyone knows how to talk and no one knows how to act
+coffee_shop_arguments,ma3adech tdhaya3 el wa9t testa3mel fel taliphoun wala ta7ki m3a el ness,stop wasting time on the phone or talk with people
+coffee_shop_arguments,aswem el 9ahwa zedet barcha ou ta3mha wala bel me,the coffee shop prices went up a lot and the coffee became watery
+coffee_shop_arguments,ena 3andi 7a9 wenti ta3ref,i am right and you know it
+coffee_shop_arguments,winha el se7a ou winou el ta3lim 3aychin min 8ir 5adamet el dawla,where is the healthcare where is the education we are living without state services
+coffee_shop_arguments,kol marra  yji el coup du monde t9oul nchlh el sne mba3d el mara el jeya yezina 3ad,every time the world cup passes you say this year then the next enough
+louage_culture,el louage 5arej wala mezel,is the louage leaving or not yet
+louage_culture,9a7ez chwaya 8adi fama blasa,move over a bit there is plenty of space there
+louage_culture,ki nerkeb fil louage nansa el denya,when i get in the louage i forget the whole world
+louage_culture,bech temchi el sfax wala bech ta7bes fel thneya,are you going all the way to sfax or stopping on the way
+louage_culture,bara fisa3 ma3adnech wa9t bich nbadlou el blayes,go go go we don't have time to switch seats
+louage_culture,a3tini 7a9 blasa taw na3tiha lel chauffeur,give me your money i'll pass it to the driver
+louage_culture,el louage ma yemchiich 7ata yet3aba,the louage doesn't leave until it's full
+louage_culture,sa7bi saker el beb el ri7 de5el,bro close the door the wind is coming in
+3aylet_gathering,el 3ila el kol jet lyoum el dar walet souk,the whole family came today the house turned into a market
+3aylet_gathering,3amti tlawej 3la ay haja t3ale9 3leha fi darek,my aunt finds something to comment on in every corner of your house
+3aylet_gathering,kif ma yji el 3id yji m3a el machekil wel 7keyet,whenever the holiday comes so does the problems and the drama
+3aylet_gathering,3ami yji yekel ou yochrob ou yrawa7 men 8ir may9oul 3aychek,my uncle comes eats drinks and leaves without even saying thanks
+3aylet_gathering,el sghar mayark7ouch jemla fil dar t9ouch 3lehom maliha,the kids have no chill in the house it's like they took over
+3aylet_gathering,dima y9oulou bech y3awnou fel koujina ou 7ad may3awen,everyone says they'll help in the kitchen and nobody actually helps
+3aylet_gathering,3ami d5al ya7ki fel siyesa ou nasena fel mekla,my uncle started talking politics and made us forget about the food
+3aylet_gathering,ommi tebda tnadhef fel dar ki yraw7ou el dhiyef,my mom starts cleaning the second the guests leave
+3rouset_el_7ouma,el 7ouma kollha 9a3da fel kresi barra,the whole neighborhood is sitting outside on chairs
+3rouset_el_7ouma,el mizwed 3ali fel lil ou el jiren yetchakew,the mezoued is blasting at night and the neighbors are complaining
+3rouset_el_7ouma,sakrou el zanka bel kresi ou matnajamch tet3ada,they blocked the street with chairs and you can't get through
+3rouset_el_7ouma,el s8ar mezelou yejrou fel lil,the kids are still running around the neighborhood at midnight
+3rouset_el_7ouma,el 3aroussa 5rajt bel 7enna ou el nes el kol bdew y8aniew,the bride came out with henna and everyone started singing
+3rouset_el_7ouma,jiran li 3omri ma7kit m3ahom ysalmou 3laya fel 3ers,neighbors i've never spoken to are greeting me at the wedding
+3rouset_el_7ouma,el mekla tfar9et fo ose7na 3al 7ouma el kol,food was distributed on plates to everyone in the neighborhood
+3rouset_el_7ouma,el 3ers mawfech 7ata el madhitletha mta3 el sbe7,the wedding didn't end until three in the morning
+police_w_dawla,a7bes a7bes het bita9et ta3rif 5al nchouf,stop stop give me your id so i can check
+police_w_dawla,el boulicia waqfitni fel barrage w chefou el awra9 el kol,the police stopped me at the checkpoint and checked all my papers
+police_w_dawla,bita9et ta3rif mte3ek wefiya badaltha 9bal ma y5atouk,your id is expired you need to go renew it before they give you a fine
+police_w_dawla,3andek matzid bech n7elou el mawdhou3,do you have something to add to it so we can sort this out
+police_w_dawla,3amel ro7ou bahloul bech ysalek ro7ou,he's playing dumb so he lets you go without making a problem
+police_w_dawla,kol mara y9oli fama war9a ne9sa ou ki tjibha yzid y9olek war9a o5ra mocuh mawjouda,every time he says a paper is missing and when you bring it he says there's another one missing
+police_w_dawla,9a3dit fel markez mel sbe7 lel 3cheya ou mal9it 7ad,i sat at the police station from morning until noon and didn't find anyone
+police_w_dawla,3tani 5teya 5ater el barbriz mta3 el karahba mkaser,he gave me a fine because my car windshield was cracked
+el_ghorba,kol manzid neb3ed 3la tounes kol ma 9albi yzid youja3,the further i get from tunisia the more my heart hurts
+el_ghorba,el ghorba t3almek barcha hajet ama tordek bered men de5el,being away from home teaches you a lot but it makes you cold inside
+el_ghorba,kol manchem el mlou5eya netfaker omi,every time i smell mloukhia i think of my mom
+el_ghorba,n7ess rou7i ghrib 7atta m3a ouled bledi,i feel like a stranger even among people from my own country
+el_ghorba,fel ghorba ta3ref chkoun berasmi we9ef m3ak,being away from home shows you who was really there for you
+el_ghorba,mafama 7ata chy fel denya a8la men bledek,nothing in the world compares to your homeland
+el_ghorba,mridh ou mafama 7ad ytol 3laya,i'm sick and i have no one to check on me
+el_ghorba,kol 3id n3adih nebki 3la la3bed li metwa7achhom,every eid i spend it crying over the people i'm missing
+el_3aza_w_mawt,allah yara7mou w ysaknou fi dar men diyar el jannah,may God have mercy on him and place him in one of the houses of paradise
+el_3aza_w_mawt,el ba9a2 lel leh w 3adham allah ajerkom,all that remains is god and may he grace your deeds
+el_3aza_w_mawt,el jiran dima yjiew bel mekla wa9teli fama chkoun yetwafa,the neighbors always come with food when someone passes away
+el_3aza_w_mawt,el dar m3abiya bel ness ou el bke 93ad tletha ayem,the house was packed with people and the crying didn't stop for three days
+el_3aza_w_mawt,mche el rabbou ou ma5ala ourah ken ouji3et el ras,he went to God and left behind nothing but heartache
+el_3aza_w_mawt,el rjel fi bit ou el sne fi bit o5ra fel 3aza,at the funeral gathering the men are in one room and the women in another
+el_3aza_w_mawt,5atmou el 9or2an 3la rou7ou w d3aw 3lih,they completed a full quran recitation for his soul and prayed for him
+el_3aza_w_mawt,ki twafa el bou el 3ila el kol we9fou m3a b3athom fi as3ab periode fi 7yethom,when their father passed the whole family had to carry themselves through the hardest time
+summer_beach_culture,mchina lel b7ar fel sbe7 bekri ou l9ina el blayes el kol deja m3abiya,we went to the beach early in the morning and found every spot already taken
+summer_beach_culture,krit parasol ou korsi b 30 dinar ou 9a3det 8adi nhar kemil,I rented an umbrella and a chair for 30 dinars and spent the whole day there
+summer_beach_culture,fi aout matnajmch tousel lel chat m3abi 3ale5er,in august you can't even reach the water it's so packed with people
+summer_beach_culture,rja3t mel b7ar ou jildti 9a3det ta7ra9 lila kemla,i came back from the beach and my skin was burning all night
+summer_beach_culture,el 9hawi fel marsa fel sif kolha just bech ya3rfouk el nes 8adi ou tchouf el nes,the cafes in la marsa in summer are just about seeing and being seen
+summer_beach_culture,93adet n3oum fel b7ar 7ata lin 8rbet el chams,i stayed swimming in the sea until the sun went down
+summer_beach_culture,jibli sandwich thon w coca wena 9a3ed n3oum,bring me a tuna sandwich and a coke while i swim
+summer_beach_culture,kol 3am nemchou lel b7ar w kol 3am nafs el 3bed ou nafs el jaw,every year we go to the beach every year same crowd same joy
+3id_el_kbir,3idek mabrouk,Blessed Eid
+3id_el_kbir,baba mche dhba7 el 3alouch fel sbe7 bekri,Dad went to slaughter the sheep early in the morning
+3id_el_kbir,el 3alouch je 8ali barcha el sne chrineh bissif,The sheep was very expensive this year we barely managed to buy it
+3id_el_kbir,a3ti lel jiren mousem mel 3alouch,Go give the neighbors their share of the meat
+3id_el_kbir,el s8ar far7anin b 7weyej el 3id el jdod,The kids are thrilled about their new Eid clothes
+3id_el_kbir,mchina le slet el 3id fel ssbe7 ou salamna 3al 7ouma el kol,We went to the Eid prayer in the morning and greeted the whole neighborhood
+3id_el_kbir,3amalna 9leya w kebda mechwiya,We made 9leya and grilled liver
+3id_el_kbir,ras el 3alouch t9as men 8ir ma farka7,The sheep's head got cut without resistance
