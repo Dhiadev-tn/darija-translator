@@ -74,9 +74,9 @@ inference.py      → Translation interface
 - **Zero automated generation** , every pair written and validated by a native Tunisian speaker
 
 ### Next Phase : Field Collection (Summer 2026)
-- Multi-region recordings across Tunisia (Tunis, Sfax, Sousse, Djerba, Kairouan)
+- recordings across the community (family,friends,strangers...)
 - Multiple age groups and regional dialects
-- Target: 3,000–5,000 validated pairs
+- Target: 1400+ validated pairs
 - This will be the first field-recorded Tunisian Darija dataset in existence
 
 ---
