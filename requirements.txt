@@ -1,4 +1,7 @@
-torch
+# torch: do NOT install with plain pip install torch (CPU only, no GPU)
+# check your CUDA version with: nvidia-smi
+# then get the right command from: https://pytorch.org/get-started/locally
+# example: pip install torch --index-url https://download.pytorch.org/whl/cu121
 sentencepiece
 sacrebleu
-datasets
+# datasets  # only needed if re-running clean_data.py or data_loader.py
