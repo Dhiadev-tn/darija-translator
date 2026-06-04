@@ -78,7 +78,57 @@ inference.py      → Translation interface
 ### Tunisian Layer : Hand-Crafted by a native Tunisian speaker
 - **500 sentence pairs** built manually across **50 categories**
 - **Zero automated generation** — every pair written and validated by a native Tunisian speaker
-- Categories: greetings, farewells, family, food & drinks, shopping & money, time & directions, emotions & feelings, compliments & insults, school & studying, health & illness, Tunisian slang, Tunisian proverbs, weather, seasons, islamic expressions, transportation, cafe culture, code switching, wedding celebrations, hammam culture, Ramadan culture, market & medina, barbershop culture, bureaucracy & paperwork, football culture, bac exam culture, work & job seeking, louage culture, 3aylet gathering, 3rouset el 7ouma, 7ouma life, coffee shop arguments, French loanwords in Darija, police & dawla, el ghorba, el 3aza & death, summer & beach culture, 3id el kbir, el hajj & el omra, taxi culture, military service, university life, fishing culture, political talk, social pressure, farming life, sbitar culture, pharmacy & medicine, olive harvest season, friday culture
+- Categories:
+  1. greetings
+  2. farewells
+  3. family
+  4. food_drinks
+  5. shopping_money
+  6. time_directions
+  7. emotions_feelings
+  8. compliments_insults
+  9. school_studying
+  10. health_illness
+  11. tunisian_slang
+  12. tunisian_proverbs
+  13. weather
+  14. seasons
+  15. islamic_expressions
+  16. transportation
+  17. french_loanwords_darija
+  18. cafe_culture
+  19. code_switching
+  20. wedding_celebrations
+  21. hammem_culture
+  22. 7ouma_life
+  23. ramadan_culture
+  24. market_medina
+  25. barbershop_culture
+  26. bureaucracy_paperwork
+  27. football_culture
+  28. bac_exam_culture
+  29. work_jobseeking
+  30. coffee_shop_arguments
+  31. louage_culture
+  32. 3aylet_gathering
+  33. 3rouset_el_7ouma
+  34. police_w_dawla
+  35. el_ghorba
+  36. el_3aza_w_mawt
+  37. summer_beach_culture
+  38. 3id_el_kbir
+  39. el_pharmaci_w_dwa
+  40. mawsem_el_zitoun
+  41. nhar_el_jom3a
+  42. el_hajj_w_el_omra
+  43. taxi_culture
+  44. military_service
+  45. university_life
+  46. fishing_culture
+  47. political_talk
+  48. social_pressure
+  49. farming_life
+  50. sbitar_culture
 
 ### Next Phase : Growing the Dataset (Summer 2026)
 - Collecting from family, community, and everyday Tunisian life — cafes, markets, gatherings
