@@ -12,7 +12,7 @@ I searched. I found nothing , only uncleaned Moroccan datasets that didn't speak
 This project is not just a translation model. It is a statement. Tunisia is a true standing culture that deserves recognition , and it has minds capable of fighting each day despite limited resources and restricted horizons.
 
 Previous work explored Tunisian Darija translation using pre-trained models. 
-I am intending to build the first ever pipeline from scratch 
+This is the first pipeline built from scratch — no shortcuts, no pre-trained foundations, every component written by hand.
 ---
 
 ## The Problem
@@ -30,7 +30,7 @@ This project is the first step toward changing that.
 
 ## What Was Built
 
-A complete NLP pipeline built from scratch on an RTX 3050 Laptop (4GB VRAM):
+A complete NLP pipeline built from scratch — starting on an RTX 3050 Laptop (4GB VRAM):
 
 ```
 vocab.py          → Custom BPE tokenizer with Arabizi support
@@ -53,8 +53,15 @@ train.py          → Full training loop
                     VRAM-safe (peak: 628MB / 3500MB limit)
 
 finetune.py       → Fine-tuning pipeline
-                    120 hand-crafted Tunisian sentence pairs
+                    500 hand-crafted Tunisian sentence pairs
                     Built manually by a native speaker
+
+split_data.py     → Stratified train/val/test split
+                    8 train / 1 val / 1 test per category
+                    Ensures honest evaluation on unseen data
+
+evaluate.py       → BLEU scoring on locked test set
+                    First honest metric — test set never trained on
 
 inference.py      → Translation interface
 ```
@@ -68,16 +75,16 @@ inference.py      → Translation interface
 - **After cleaning**: 35,977 pairs
 - **Removed**: 8,736 pairs , duplicates, short pairs, untranslated sentences, Moroccan-specific vocabulary
 
-### Tunisian Layer : Hand-Crafted by a native tunisian speaker 
-- **328 sentence pairs** built manually
-- Authentic Tunisian Darija across 33 categories: greetings, farewells, family, food & drinks, shopping & money, time & directions, emotions & feelings, compliments & insults, school & studying, health & illness, Tunisian slang, Tunisian proverbs,weather,seasons,islamic_expressions,transportation,french_loanwords_darija,cafe_culture,code_switching,wedding_celebrations,hammem_culture,7ouma_life,ramadan_culture,market_medina,barbershop_culture,bureaucracy_paperwork,football_culture,bac_exam_culture,work_jobseeking,coffee_shop_arguments,louage_culture,3aylet_gatherin,,3rouset_el_7ouma
-- **Zero automated generation** , every pair written and validated by a native Tunisian speaker
+### Tunisian Layer : Hand-Crafted by a native Tunisian speaker
+- **500 sentence pairs** built manually across **50 categories**
+- **Zero automated generation** — every pair written and validated by a native Tunisian speaker
+- Categories: greetings, farewells, family, food & drinks, shopping & money, time & directions, emotions & feelings, compliments & insults, school & studying, health & illness, Tunisian slang, Tunisian proverbs, weather, seasons, islamic expressions, transportation, cafe culture, code switching, wedding celebrations, hammam culture, Ramadan culture, market & medina, barbershop culture, bureaucracy & paperwork, football culture, bac exam culture, work & job seeking, louage culture, 3aylet gathering, 3rouset el 7ouma, 7ouma life, coffee shop arguments, French loanwords in Darija, police & dawla, el ghorba, el 3aza & death, summer & beach culture, 3id el kbir, el hajj & el omra, taxi culture, military service, university life, fishing culture, political talk, social pressure, farming life, sbitar culture, pharmacy & medicine, olive harvest season, friday culture
 
-### Next Phase : Field Collection (Summer 2026)
-- recordings across the community (family,friends,strangers...)
-- Multiple age groups and regional dialects
-- Target: 1400+ validated pairs
-- This will be the first field-recorded Tunisian Darija dataset in existence
+### Next Phase : Growing the Dataset (Summer 2026)
+- Collecting from family, community, and everyday Tunisian life — cafes, markets, gatherings
+- Multiple sources: self, family members, friends, strangers
+- Target: **1,000 pairs** by August 2026
+- Every milestone triggers a retrain and a new BLEU measurement — the score going up is the story
 
 ---
 
@@ -87,16 +94,16 @@ inference.py      → Translation interface
 |-----------|--------|
 | Architecture | Encoder-Decoder Transformer |
 | Parameters | ~15.6M |
-| Tokenizer | SentencePiece BPE :16,000 tokens, trained on combined Darija+English corpus, shared between source and target, Arabizi-aware |
+| Tokenizer | SentencePiece BPE : 16,000 tokens, trained on combined Darija+English corpus, shared between source and target, Arabizi-aware |
 | Embedding dim | 256 (source + target, weight-tied output layer) |
 | Encoder / Decoder | 4 layers each |
 | Training data | ~35,000 cleaned Moroccan Darija pairs |
-| Pre-training | 15 epochs : final loss 2.8393 |
-| Fine-tuning data | 328 hand-crafted Tunisian pairs |
-| Fine-tuning | 20 epochs : final loss 2.6264 |
+| Pre-training | 15 epochs on Moroccan data (RTX 3050 Laptop, 4GB VRAM) |
+| Fine-tuning data | 500 hand-crafted Tunisian pairs, stratified 8/1/1 split |
+| Fine-tuning | 20 epochs, best checkpoint by val loss (RTX 4070 Desktop) |
+| BLEU score | **3.89** — v1 baseline, June 2026 |
 | Model size | ~59.4 MB (float32) |
-| Peak VRAM | 628MB out of 3,500MB limit |
-| Hardware | NVIDIA RTX 3050 Laptop (4GB VRAM) |
+| Peak VRAM (pre-training) | 628MB out of 3,500MB limit |
 | Framework | PyTorch 2.1 + CUDA 12.1 |
 
 > **Architecture note**: The output projection layer shares weights with the target embedding (weight tying) ,a deliberate design decision that reduces parameters and improves generalization on low-resource translation tasks.
@@ -105,11 +112,17 @@ inference.py      → Translation interface
 
 ## Current Results
 
-The model demonstrates partial understanding of Darija structure. Simple greetings translate correctly. Complex sentences reveal the core limitation: **no large clean Tunisian dataset exists yet.**
+| Metric | Value |
+|--------|-------|
+| BLEU score | **3.89** (v1 baseline — 500 pairs, June 2026) |
+| Best checkpoint | Epoch 7 / 20 (by validation loss) |
+| Test set | 50 pairs, locked — never trained on |
+
+The model demonstrates partial understanding of Darija structure. Simple sentences translate with recognizable meaning. Complex cultural expressions reveal the core limitation: **not enough Tunisian data yet.**
 
 This is not a failure. This is the finding.
 
-The pipeline works. The architecture is proven. The data gap is documented firsthand. Phase 2 , field collection , is the answer.
+The pipeline works. The architecture is proven. The data gap is documented firsthand. 3.89 is the number to beat — and it will be beaten, retrain by retrain, as the dataset grows toward 1,000 pairs.
 
 ---
 
@@ -120,19 +133,15 @@ The pipeline works. The architecture is proven. The data gap is documented first
 Python 3.10+
 PyTorch 2.1.0 (CUDA 12.1)
 sentencepiece
-datasets (HuggingFace)
+sacrebleu
 ```
 
 ### Setup
 ```bash
 git clone https://github.com/dhiadev-tn/darija-translator
 cd darija-translator
-pip install torch sentencepiece datasets
-```
-
-### Clean The Data
-```bash
-python clean_data.py
+pip install sentencepiece sacrebleu
+pip install torch --index-url https://download.pytorch.org/whl/cu121
 ```
 
 ### Train
@@ -145,26 +154,34 @@ python train.py
 python inference.py
 ```
 
+### Evaluate
+```bash
+python evaluate.py
+```
+
 ---
 
 ## Roadmap
 
 ```
- Phase 1 : Foundation
+✅ Phase 1 : Foundation
    Arabizi tokenizer, data pipeline, Nano-Transformer
+   Pre-trained on 35,977 Moroccan pairs (RTX 3050 Laptop)
 
- Phase 2 : Training
-   35,977 cleaned pairs, BPE tokenization, fine-tuning
+✅ Phase 2 : v1 Baseline (June 2026)
+   500 hand-crafted Tunisian pairs, 50 categories
+   Proper train/val/test splits — honest evaluation
+   First official BLEU score: 3.89
 
-⏳ Phase 3 : Field Collection (Summer 2026)
-   Multi-region Tunisian recordings
-   Native speaker validation
-   3,000–5,000 authentic pairs
+⏳ Phase 3 : Dataset Growth (Summer 2026)
+   Collecting from family, community, everyday Tunisian life
+   Target: 1,000 authentic pairs by August 2026
+   Retrain after milestone → new BLEU score
 
-⏳ Phase 4 : Production Model
-   Retrain on clean Tunisian foundation
-   HuggingFace public release
-   Open for community contributions
+⏳ Phase 4 : Demo & Visibility
+   HuggingFace Spaces live demo (Gradio)
+   Blog posts written in real time during the field mission and the collection process, the cultural moments, the data growing live
+   Final BLEU score — measurable progress from v1 to v2
 ```
 
 ---
@@ -191,4 +208,3 @@ Built by **Dhia** ([@dhiadev-tn](https://github.com/dhiadev-tn)) , Tunisia
 ---
 
 > *"I didn't wait for the door to be built. I built it."*
- 
