@@ -4,8 +4,9 @@
 """
 model.py — Nano-Transformer for Tunisian Darija-to-English translation.
 
-Architecture: full encoder-decoder Transformer, sized to fit within 3500MB VRAM
-on an RTX 3050 Laptop (4GB).
+Architecture: full encoder-decoder Transformer, originally sized to fit within 3500MB VRAM
+on an RTX 3050 Laptop (4GB) — where pre-training on Moroccan data was completed.
+v1 fine-tuning (June 2026) migrated to RTX 4070 Desktop (12GB VRAM, VRAM_LIMIT_MB=10000).
 """
 
 import math
@@ -216,7 +217,7 @@ if __name__ == "__main__":
     # inference only needs the weights.
     weight_vram_mb = (total_params * 4) / (1024 ** 2)
     print(f"  Model weight VRAM  : {weight_vram_mb:.2f} MB  (float32, inference)")
-    print(f"  Safety limit       : 3500 MB")
+    print(f"  Safety limit       : 3500 MB (RTX 3050 original) — v1 runs on RTX 4070 at 10000 MB")
     assert weight_vram_mb < 3500, "VRAM limit exceeded — shrink the model!"
     print(f"  VRAM check         : PASSED (headroom: {3500 - weight_vram_mb:.1f} MB)")
 
