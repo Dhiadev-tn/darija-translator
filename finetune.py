@@ -17,8 +17,10 @@ Load sequence (resume):
   — Restores model, optimizer, scheduler, and scaler states
   — Continues training from where it left off
 
-Data strategy with small Tunisian dataset (120 pairs):
-  Tunisian repeated 20x = 2,400 samples — enough signal for the model to learn
+Data strategy:
+  Originally written for 120 pairs on RTX 3050 Laptop (4GB VRAM).
+  v1 migration (June 2026): 400 train pairs on RTX 4070 Desktop (12GB VRAM).
+  Tunisian repeated 20x = 8,000 effective samples — enough signal for the model to learn
   Moroccan kept at 1x = 35k samples — prevents catastrophic forgetting
 """
 
@@ -46,7 +48,7 @@ vram_total = torch.cuda.get_device_properties(0).total_memory / (1024 ** 3)
 print(f"  Device : {torch.cuda.get_device_name(0)}")
 print(f"  VRAM   : {vram_total:.2f} GB total")
 if vram_total < 4.0:
-    print("  WARNING: VRAM < 4 GB — 3500 MB safety limit is active")
+    print("  WARNING: VRAM < 4 GB — was 3500 MB safety limit on RTX 3050, now running on RTX 4070 (VRAM_LIMIT_MB=10000)")
 print()
 
 # ── Configuration ──────────────────────────────────────────────────────────────
@@ -54,18 +56,18 @@ PROJECT_ROOT       = os.path.dirname(os.path.abspath(__file__))
 MOROCCAN_CSV       = os.path.join(PROJECT_ROOT, "data/clean/clean_darija_english.csv")
 TUNISIAN_CSV       = os.path.join(PROJECT_ROOT, "data/splits/train.csv")
 TUNISIAN_VAL_CSV   = os.path.join(PROJECT_ROOT, "data/splits/val.csv")
-TUNISIAN_REPEAT    = 20        # repeat 120 pairs × 20 = 2,400 Tunisian samples
+TUNISIAN_REPEAT    = 20        # repeat 400 train pairs × 20 = 8,000 Tunisian samples (was 120 × 20 = 2,400 on RTX 3050)
 MOROCCAN_REPEAT    = 1         # keep Moroccan at 1x — prevents catastrophic forgetting
 PRETRAINED_CKPT    = os.path.join(PROJECT_ROOT, "models/checkpoints/best_model.pt")
 FINETUNE_DIR       = os.path.join(PROJECT_ROOT, "models/checkpoints/finetune")
 
-BATCH_SIZE       = 32
+BATCH_SIZE       = 128
 EPOCHS           = 20
 LEARNING_RATE    = 2e-5    # 5× lower than pre-training — protect pre-trained weights
 WARMUP_STEPS     = 200     # gradual LR warmup so early steps don't corrupt embeddings
-GRAD_ACCUM_STEPS = 4       # effective batch = 32 × 4 = 128
+GRAD_ACCUM_STEPS = 1       # effective batch = 128 × 1 = 128
 USE_AMP          = True
-VRAM_LIMIT_MB    = 3500
+VRAM_LIMIT_MB    = 10000
 MAX_SEQ_LEN      = 32
 PAD_IDX          = 0
 BOS_IDX          = 2

@@ -62,7 +62,8 @@ model.eval()
 
 # ── Greedy decode ──────────────────────────────────────────────────────────────
 def translate(darija_text: str, max_tokens: int = 64) -> str:
-    src_ids = [BOS_IDX] + tokenizer.encode_src(darija_text) + [EOS_IDX]
+    src_ids = tokenizer.encode_src(darija_text)[:MAX_SEQ_LEN - 2]
+    src_ids = [BOS_IDX] + src_ids + [EOS_IDX]
     src     = torch.tensor(src_ids, dtype=torch.long).unsqueeze(0).to(DEVICE)
     src_pad = (src == PAD_IDX)
     scale   = math.sqrt(EMB_DIM)
